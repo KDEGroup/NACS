@@ -57,12 +57,6 @@ class SemiLoss(nn.Module):
 
         return -torch.log(between_sim.diag() / (refl_sim.sum(1) + between_sim.sum(1) - refl_sim.diag()))
 
-    def forward(self, z1, z2, nce):
-
-        f = lambda x: torch.exp(x / nce)
-        new_sim = f(sims)
-
-        return -torch.log(new_sim.diag() / new_sim.sum(1))
 
 class InfoNceLoss(nn.Module):
     def __init__(self):

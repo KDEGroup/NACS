@@ -141,7 +141,7 @@ def parse_option():
     parser.add_argument("--learning_rate", type=float, default=0.001, help="learning rate")
 
     # specify folder
-    parser.add_argument("--model-path", type=str, default='ast_pretrain/saved_models/GCC_CSN_all_add_c', help="path to save model")
+    parser.add_argument("--model-path", type=str, default='ast_pretrain/saved_models/GCC_CSN_all_add_cp', help="path to save model")
     parser.add_argument("--data-path", type=str, default='data/pretrain', help="path to save model")
 
     # GPU setting
