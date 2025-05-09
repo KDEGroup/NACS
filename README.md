@@ -1,8 +1,8 @@
 # Deep Code Search with Naming-Agnostic Contrastive Multi-view Learning
 
-This repository contains our implementation for NACS£ which contains two stages of pre-training and code search.
+Source code for our TKDD paper "Deep Code Search with Naming-Agnostic Contrastive Multi-view Learning" [[arXiv]](https://arxiv.org/abs/2408.09345).
 
-####  Environment
+###  Environment
 
 * Python 3.8
 * pytorch 1.12
@@ -11,11 +11,11 @@ This repository contains our implementation for NACS£ which contains two stages
 * tree-sitter 0.20.0
 * dgl 0.8.2
 
-#### Data
+### Data
 
-We use the [CodeSearchNet](https://github.com/github/CodeSearchNet) dataset in the pre-training phase and the [CoSQA](https://github.com/Jun-jie-Huang/CoCLR/tree/main/data/search) and [CodeSearchNet](https://github.com/github/CodeSearchNet) datasets in the code search phase.
+We use four datasets: CodeSearchNet-Python, CodeSearchNet-Java, CoSQA and CoSQA-Var.
 
-#### Command Line Parameters
+### Command Line Parameters
 
 `ast_pretrain/train.py` is the main entry of the AST pretrain, it requires several parameters as follows:
 
@@ -51,7 +51,7 @@ We use the [CodeSearchNet](https://github.com/github/CodeSearchNet) dataset in t
 * per_gpu_train_batch_size: size of batch.
 * epochs: number of training epochs.
 
-#### Example
+### Example
 
 Use the following commands for pre-training and the code search task: 
 
