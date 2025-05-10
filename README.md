@@ -11,9 +11,9 @@ Source code for our TKDD paper "Deep Code Search with Naming-Agnostic Contrastiv
 * tree-sitter 0.20.0
 * dgl 0.8.2
 
-### Data
+### Data and Checkpoint
 
-We use four datasets: CodeSearchNet-Python, CodeSearchNet-Java, CoSQA and CoSQA-Var.
+We use four datasets: CodeSearchNet-Python, CodeSearchNet-Java, CoSQA and CoSQA-Var. We also provide the checkpoint of the model. The data and checkpoint file can be downloaded from [Dropbox](https://www.dropbox.com/scl/fi/fdfqhur9hvgjyix94mq1q/NACS-data-ckpt.zip?rlkey=ufhdpzxkf6s9qkvd6taotqok8&st=mf28btf4&dl=1).
 
 ### Command Line Parameters
 
